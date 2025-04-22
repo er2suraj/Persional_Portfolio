@@ -1,0 +1,394 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+
+/* styling for navabr */
+ul{
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+}
+li a{ 
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+}
+.navlink ul{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.header{
+    width: 100vw;
+    height: 8vh;
+    position: fixed;
+}
+.nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: rgb(18, 18, 35);
+}
+.navlogo{
+    width: 50%;
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.navlink{
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+.homel{
+    animation-direction: reverse;
+    animation-name: home;
+    animation-duration: 0.5s;
+}
+.aboutl{
+    animation-direction: reverse;
+    animation-name: about;
+    animation-duration: 0.52s;
+    animation-timing-function: ease-out;
+}
+.servicel{
+    border: none;
+    animation-direction: reverse;
+    animation-name: service;
+    animation-duration: 0.54s;
+    animation-timing-function: ease-out;
+}
+.skilll{
+    animation-direction: reverse;
+    animation-name: skill;
+    animation-duration: 0.56s;
+    animation-timing-function: ease-out;
+}
+.projectl{
+    animation-direction: reverse;
+    animation-name: project;
+    animation-duration: 0.58s;
+    animation-timing-function: ease-out;
+    
+}
+.contactl{
+    animation-direction: reverse;
+    animation-name: contact;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-out;
+    
+}
+@keyframes home{
+  100%{transform: translate(0rem,-1rem);}  
+}
+@keyframes about{
+    100%{transform: translate(0rem,-2rem);} 
+}
+@keyframes service{
+    100%{transform: translate(0rem,-3rem);} 
+}
+@keyframes skill{
+    100%{transform: translate(0rem,-4rem);} 
+}
+@keyframes project{
+    100%{transform: translate(0rem,-5rem);}
+}
+@keyframes contact{
+    100%{transform: translate(0rem,-6rem);}
+}
+
+.nav-hover a:hover{
+    color: aqua;
+    font-size: 1.2rem;
+}
+/* styling for home page  */
+.homepage{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    background-color: rgb(8, 33, 51);
+    border-bottom: 1px solid white;
+}
+.homediv1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+.about-me{
+    width: 55%;
+    height: 40%;
+    color: white;
+}
+.homediv2{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.my-image{
+    width: 55%;
+    height: 60%;
+    border: 0.1r;
+    border: 0.2rem solid white;
+    background-image: linear-gradient(to right, aqua,rgb(132, 71, 176),aqua);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.me{
+    width: 95%;
+    height: 95%;
+    border-radius: 100%;
+    background-color: black;
+    background-image: url(suraj.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.line1{
+    width: 100%;
+    font-size: 1.5rem;
+    animation-name: l1;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+}
+.line2{
+    width: 100%;
+    font-size: 2.5rem;
+    animation-name: l2;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+    animation-delay: 1s;
+}
+.line3{
+    width: 100%;
+    font-size: 1.5rem;
+    display: flex;
+    animation-name: l3;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+    animation-delay: 1s;
+}
+
+.line4{
+    font-size: 1.5rem;
+    margin-top: 5px;
+    margin-left: 5px;
+    border-right: 0.2rem solid aqua;
+    color: aqua;
+    width: 0;
+    align-items: center;
+    white-space: nowrap;
+    overflow-x: hidden;
+    animation-name: typing;
+    animation-duration: 3s;
+    animation-timing-function: steps(18,end);
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+.social-link{
+    width: 0;
+    margin-top: 1.5rem;
+    white-space: nowrap;
+    overflow-x: hidden;
+    animation-name: move-icon;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.social-logo{
+    font-size: 1.5rem;
+    padding: 5px;
+    border: 2px solid aqua;
+    border-radius: 100%;
+    color: aqua;
+    animation-name: move-social;
+    animation-duration: 4s;
+    animation-delay: 0.5s;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+}
+.social-logo:hover{
+    color: rgb(54, 124, 190);
+}
+@keyframes l1 {
+    100%{transform: translate(0rem, -3rem);}
+}
+@keyframes l2{
+    100%{transform: translate(-3rem, 0rem);}
+}
+@keyframes l3{
+    100%{transform: translate(0rem, 3rem);} 
+}
+@keyframes move-social{
+    100%{transform: translate(-5rem,0);}
+}
+@keyframes typing{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+    
+}
+@keyframes move-icon{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+/* styling for about page */
+#About{
+    width: 100%;
+    height: 90vh;
+    background-color: rgb(8, 33, 51);
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid white;
+}
+.About_Image_Box{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.About_Image{
+    width: 50%;
+    height: 60%;
+    background-image: url(suraj.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    border: 10px solid rgb(32, 165, 218);
+}
+
+.AboutText{
+    
+    font-size: large;
+    color: aliceblue;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+#aboutMe{
+    width: 20%;
+    height: 10%;
+    background-color: aqua;
+    border-radius: 30%;
+}
+ /* styling for skills page */
+
+.skills{
+    width: 100%;
+    height: 90vh;
+    color: aliceblue;
+    background-color: rgb(8, 33, 51);
+    border-bottom: 1px solid white;
+}
+.skill1{
+    width: 100%;
+    height: 85%;
+    display: flex;
+}
+.technical{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.technical h2{
+ height: 10%;
+}
+.professional{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.professional h2{
+    height: 10%;
+   }
+.skills h1{
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skills_list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+/* styling for porject page  */
+.projects{
+    width: 100%;
+    height: 80vh;
+    color: aliceblue;
+    background-color: rgb(8, 33, 51);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects h1{
+    width: 100%;
+    height: 10%;
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+}
+.project_list{
+    width: 70%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+/* styling for ccontact page  */
+.contact{
+    width: 100%;
+    height: 30vh;
+    background-color: rgb(18, 18, 18);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
