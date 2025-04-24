@@ -60,7 +60,7 @@ const Home = () => {
             <br />With a solid foundation in both front-end and back-end technologies,
             <br />I love creating seamless and dynamic web applications that enhance user experiences.
           </p>
-          <button style={{float: 'center',width:'100%',marginLeft: '2rem'}} id="aboutMe">More About Me</button>
+          <button style={{float: 'center',width:'100%'}} id="aboutMe">More About Me</button>
         </div>
         <div className="About_Image_Box">
           <div className="About_Image"></div>
